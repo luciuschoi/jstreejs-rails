@@ -103,6 +103,30 @@ json.parent category.root? ? "#" : category.ancestry.split("/").last
 
 ![](vendor/assets/images/screen_capture.png)
 
+
+### Themes
+
+Two themes were included by default: `default` and `default-dark`.
+
+To change the theme from  `default` to `default-dark`, you should update two code lines as follows:
+
+**application.css**
+
+```css
+ *= require jstree/default-dark/style.min
+···
+```
+
+**jstree-init.coffee**
+
+```coffeescript
+$(document).on 'turbolinks:load', ->
+  $('#tree').jstree 'core':
+    'themes':
+      'name': 'default-dark'
+      ···
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
