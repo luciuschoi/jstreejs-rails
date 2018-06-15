@@ -42,7 +42,6 @@ or **application.scss**
 ```js
 //= require jquery
 //= require jquery_ujs
-//= require activestorage
 //= require jstree.min
 //= require jstree_init
 //= require turbolinks
@@ -93,6 +92,8 @@ class CategoriesController < ApplicationController
 ```html
 <div id='tree'></div>
 ```
+
+![](vendor/assets/images/screen_capture.png)
 
 ## Development
 
