@@ -1,0 +1,1 @@
+# Sample Project for jstreejs-rails gem
