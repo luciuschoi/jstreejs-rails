@@ -2,12 +2,14 @@
 
 This gem was built for the assets of Ruby on Rails projects.
 
+[![Gem Version](https://badge.fury.io/rb/jstreejs-rails.svg)](https://badge.fury.io/rb/jstreejs-rails)
+
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'jstreejs-rails'
+gem 'jstreejs-rails', '3.3.5.0'
 ```
 
 And then execute:
