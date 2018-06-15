@@ -9,16 +9,16 @@ This gem was built for the assets of Ruby on Rails projects.
 Add this line to your application's Gemfile:
 
 ```ruby
+gem 'jquery-rails'
 gem 'jstreejs-rails', '3.3.5.0'
+gem 'ancestry'
 ```
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install jstreejs-rails
+```sh
+$ bundle
+```
 
 ## Usage
 
