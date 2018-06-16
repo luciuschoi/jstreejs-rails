@@ -226,6 +226,17 @@ json.order category.favorite_order
 <%= render category.children %>
 ```
 
+**routes.rb**
+
+```ruby
+Rails.application.routes.draw do
+  root "categories#index"
+  resources :categories
+  get "categories/:parent_id/subcategory/new" => "categories#new", as: :new_subcategory
+  get "categories/:transfer_ids/to/:target_id" => "categories#transfer", as: :transfer_categories
+end
+```
+
 
 ![](vendor/assets/images/screen_capture.png)
 
