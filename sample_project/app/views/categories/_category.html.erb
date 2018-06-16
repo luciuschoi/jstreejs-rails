@@ -1,7 +1,6 @@
 <tr>
-  <td><%= indent(category.ancestry) %> <%= category.title %> (<%= category.ancestry || '#' %>)</td>
-  <td><%= category.description %></td>
-  <td><%= category.favorite %></td>
+  <td class='has-text-centered'><%= category.id %></td>
+  <td><%= indent(category.ancestry) %> <%= category.favorite_order %> <%= category.title %></td>
   <td><%= link_to '서브챕터생성', new_subcategory_path(category) %></td>
   <td><%= link_to 'Show', category %></td>
   <td><%= link_to 'Edit', edit_category_path(category) %></td>

@@ -10,7 +10,9 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require bulma
  *= require jstree/default/style.min
+ *= require jstree/default-dark/style.min
  *= require_tree .
  *= require_self
  */

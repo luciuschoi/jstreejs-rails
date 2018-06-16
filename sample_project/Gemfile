@@ -3,9 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
-gem 'ancestry'
-gem "jstreejs-rails", path: '/Users/lucius/myrails/gemify/jstreejs-rails'
 gem 'jquery-rails'
+gem "bulma-rails", "~> 0.7.1"
+gem 'ancestry'
+gem "jstreejs-rails"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'

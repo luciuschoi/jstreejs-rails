@@ -1,26 +1,31 @@
 <p id="notice"><%= notice %></p>
 
-<div id="tree">
+<div class="contaner">
+  <div class="navbar">
+    <h1 class='title is-3'>Categories</h1>
+  </div>
+  <div class="columns">
+    <div class="column is-4">
+      <div id="tree"></div>    
+    </div>
+    <div class="column is-8">
+      <table class='table is-bordered is-striped is-hoverable is-fullwidth'>
+        <thead>
+          <tr class='has-background-grey-lighter'>
+            <th class='has-text-centered'>ID</th>
+            <th class='has-text-centered'>Title</th>
+            <th class='has-text-centered' colspan="4">Data Actions</th>
+          </tr>
+        </thead>
 
+        <tbody id="categories_table_list">
+          <%= render @categories %>
+        </tbody>
+      </table>    
+    </div>
+  </div>
 </div>
-
-<h1>Categories</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Favorite</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <%= render @categories %>
-  </tbody>
-</table>
 
 <br>
 
-<%= link_to 'New Chapter', new_category_path %>
+<%= link_to 'New Chapter', new_category_path, class: 'button is-primary' %>
