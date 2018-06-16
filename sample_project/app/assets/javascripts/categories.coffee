@@ -20,3 +20,9 @@ $(document).on 'turbolinks:load', ->
       else
         if a1.icon > b1.icon then 1 else -1
   return
+
+$(document).on 'dnd_stop.vakata', (e, data) ->
+  ref = $('#tree').jstree(true)
+  parents = ref.get_node(data.element).parent
+  alert parents
+  return  
