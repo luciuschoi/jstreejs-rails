@@ -264,6 +264,11 @@ $(document).on 'turbolinks:load', ->
       ···
 ```
 
+### Demo
+
+
+[![](https://lh3.googleusercontent.com/v8XQBlFTDLz80c6Lrd2IeBzO_3gWkdYmHP-4YeDNNPJg4tWUzwXDnJjKilu_LWpsNFAhCxDdiQ=w640-h400-e365)](https://youtu.be/N2JFnZRs0ec)
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
